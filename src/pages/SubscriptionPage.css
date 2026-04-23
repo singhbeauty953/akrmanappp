@@ -1,0 +1,158 @@
+.sub-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.sub-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.sub-header h1 {
+  font-size: 36px;
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.sub-header p {
+  font-size: 18px;
+  color: #666;
+  margin: 0;
+}
+
+.message {
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.message.success {
+  background-color: #e6ffe6;
+  color: #00aa00;
+  border: 1px solid #00aa00;
+}
+
+.message.error {
+  background-color: #ffe6e6;
+  color: #aa0000;
+  border: 1px solid #aa0000;
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.plan-card {
+  background: white;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.plan-card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-color: #667eea;
+  transform: translateY(-5px);
+}
+
+.plan-card.featured {
+  border-color: #667eea;
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+  transform: scale(1.05);
+}
+
+.plan-card h3 {
+  font-size: 24px;
+  margin: 0 0 15px 0;
+  color: #333;
+}
+
+.plan-card .price {
+  font-size: 48px;
+  font-weight: bold;
+  color: #667eea;
+  margin: 15px 0;
+}
+
+.plan-card .duration {
+  color: #999;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+  text-align: left;
+}
+
+.features li {
+  padding: 10px 0;
+  color: #666;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.features li:last-child {
+  border-bottom: none;
+}
+
+.subscribe-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.subscribe-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.subscribe-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.payment-info {
+  text-align: center;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  color: #666;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+.payment-info p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .plans-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .plan-card.featured {
+    transform: scale(1);
+  }
+
+  .sub-header h1 {
+    font-size: 28px;
+  }
+}

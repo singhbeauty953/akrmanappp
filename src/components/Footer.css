@@ -1,0 +1,39 @@
+.footer { background: #1a1a2e; color: #aaa; margin-top: 60px; }
+.footer-inner {
+  max-width: 1280px; margin: auto;
+  display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px; padding: 50px 48px 30px;
+}
+.footer-logo {
+  font-family: 'Playfair Display', serif; font-size: 1.6rem; color: #fff;
+}
+.footer-logo span { color: #e74c3c; }
+.footer-brand p { font-size: .82rem; margin-top: 10px; line-height: 1.7; }
+.footer-links h5,
+.footer-social h5 {
+  color: #fff; font-size: .9rem; margin-bottom: 14px;
+  text-transform: uppercase; letter-spacing: .5px;
+}
+.footer-links ul { list-style: none; padding: 0; }
+.footer-links ul li { margin-bottom: 8px; }
+.footer-links ul li a { font-size: .82rem; color: #aaa; text-decoration: none; transition: color .2s; }
+.footer-links ul li a:hover { color: #e74c3c; }
+.social-icons { display: flex; gap: 10px; flex-wrap: wrap; }
+.social-icons a {
+  width: 36px; height: 36px; border-radius: 50%;
+  border: 1px solid #444; display: flex; align-items: center;
+  justify-content: center; font-size: .75rem; font-weight: 700;
+  color: #aaa; text-decoration: none; transition: all .2s;
+}
+.social-icons a:hover { background: #e74c3c; border-color: #e74c3c; color: #fff; }
+.footer-bottom {
+  border-top: 1px solid #333; text-align: center;
+  padding: 18px 48px; font-size: .78rem; opacity: .6;
+}
+
+@media (max-width: 900px) {
+  .footer-inner { grid-template-columns: 1fr 1fr; padding: 30px 20px; }
+}
+@media (max-width: 500px) {
+  .footer-inner { grid-template-columns: 1fr; padding: 24px 16px; }
+}
